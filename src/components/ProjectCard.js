@@ -1,7 +1,7 @@
-// src/components/ProjectCard.js
+
 import Link from 'next/link';
 
-// We can add simple icons as text for a professional touch
+
 const LinkIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
     <path d="M10.707 8.707 8.354 6.354a.5.5 0 0 0-.708 0l-1.5 1.5a.5.5 0 0 0 0 .708l1.5 1.5a.5.5 0 0 0 .708 0l.146-.147a.5.5 0 1 0-.708-.708L7.05 9.707 6.354 9l1.5-1.5 2.353 2.354-.707.707a.5.5 0 0 0 0 .708l1.5 1.5a.5.5 0 0 0 .708 0l1.5-1.5a.5.5 0 0 0 0-.708l-1.5-1.5a.5.5 0 0 0-.708 0z"/>
@@ -19,7 +19,7 @@ const GithubIcon = () => (
 export default function ProjectCard({ title, description, techStack, liveUrl, githubUrl }) {
   return (
     <div className="bg-white rounded-lg shadow-xl overflow-hidden transform transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
-      {/* You can use a placeholder image service or a local image */}
+      
       <img
         src={`https://placehold.co/600x400/334155/e2e8f0?text=${title.replace(' ', '+')}`}
         alt={`${title} thumbnail`}

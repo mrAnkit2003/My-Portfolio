@@ -33,7 +33,7 @@ export default function Contact() {
       <h1 className="text-4xl font-bold text-white-900 text-center mb-8">
         Get in Touch
       </h1>
-      <p className="text-lg text-gray-600 text-center mb-16 max-w-lg mx-auto">
+      <p className="text-lg text-gray-400 text-center mb-16 max-w-lg mx-auto">
         I'm always open to discussing new projects, creative ideas, or
         opportunities to be part of your vision. Feel free to reach out!
       </p>
