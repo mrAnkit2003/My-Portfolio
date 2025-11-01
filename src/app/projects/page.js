@@ -6,7 +6,7 @@ const projectsData = [
   {
     title: "E-Commerce Store",
     description: "A multi vendor e-commerce platform built with Next.js and Stripe for payments. Includes user auth, a shopping cart, and an admin dashboard.",
-    techStack: ["Next.js", "React", "Tailwind CSS", "Stripe", "Neon"],
+    techStack: ["Next.js", "React", "Tailwind CSS", "Stripe", "Neon", "Clerk", "Inngest"],
     liveUrl: "https://go-cart-nine.vercel.app/", 
     githubUrl: "https://github.com/mrAnkit2003/GoCart", 
   },
@@ -20,7 +20,7 @@ const projectsData = [
   {
     title: "Video Conferencing Website",
     description: "A video conferencing platform enabling real-time video calls, messaging, and authenticated user sessions.",
-    techStack: ["React", "webRTC", "Socket.io", "Mongo Atlas", "Express.js", "Node.js"],
+    techStack: ["React", "WebRTC", "Socket.io", "Mongo Atlas", "Express.js", "Node.js"],
     liveUrl: "https://nexmeetfrontend-suek.onrender.com/",
     githubUrl: "https://github.com/mrAnkit2003/NexMeet",
   },

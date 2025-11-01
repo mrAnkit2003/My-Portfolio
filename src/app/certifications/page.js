@@ -44,7 +44,7 @@ export default function Certifications() {
   return (
     <div className="container mx-auto max-w-5xl p-8">
       <h1 className="text-4xl font-bold text-white-900 text-center mb-12">
-        Certifications & Skills
+         Skills & Certifications
       </h1>
 
       

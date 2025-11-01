@@ -8,7 +8,7 @@ import { useState } from 'react';
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'Projects', href: '/projects' },
-  { name: 'Certifications', href: '/certifications' },
+  { name: 'Skills', href: '/certifications' },
   { name: 'Contact', href: '/contact' },
 ];
 
@@ -44,7 +44,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             {/* We use a Link component to go to the home page */}
             <Link href="/" className="text-white font-bold text-xl">
-              My Portfolio
+              Portfolio
             </Link>
           </div>
 
