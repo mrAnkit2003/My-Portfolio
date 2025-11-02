@@ -1,13 +1,12 @@
-
-import { Poppins } from 'next/font/google'; 
+// src/app/layout.js
+import { Poppins } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'], 
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata = {
@@ -18,14 +17,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
       <body
-        className={`${poppins.className} bg-gray-950 text-gray-300 antialiased`}
+        className={`${poppins.className} text-gray-300 antialiased`}
       >
-        <div className="flex flex-col min-h-screen">
+        {/* 2. Apply the gradient to this div */}
+        {/* This div will now stretch to fill the entire page */}
+        <div className="flex flex-col min-h-screen bg-gradient-purple-dark">
           <Navbar />
           <main className="flex-grow">{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </body>
     </html>

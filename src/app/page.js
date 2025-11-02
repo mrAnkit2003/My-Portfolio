@@ -57,12 +57,12 @@ export default function Home() {
             My Resume
           </a>
           
-          <Link
+          {/* <Link
             href="/contact"
             className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-gray-700 bg-white rounded-lg shadow-lg ring-1 ring-gray-300 hover:bg-gray-100 transition-colors duration-300"
           >
             Get in Touch
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
