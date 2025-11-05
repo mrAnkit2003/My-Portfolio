@@ -21,7 +21,6 @@ const skillCategories = [
   }
 ];
 
-
 const certsData = [
   {
     name: "IBM Full Stack Software Developer",
@@ -40,29 +39,41 @@ const certsData = [
   },
 ];
 
+// Page Component
 export default function Certifications() {
   return (
     <div className="container mx-auto max-w-5xl p-8">
-      <h1 className="text-4xl font-bold text-white-900 text-center mb-12">
+      <h1 className="text-4xl font-bold text-white text-center mb-12">
          Skills & Certifications
       </h1>
 
-      
+      {/* Skills Section */}
       <section>
-        <h2 className="text-3xl font-semibold text-white-800 mb-8">
+        <h2 className="text-3xl font-semibold text-white mb-8">
           My Technical Skills
         </h2>
-        <div className="bg-white rounded-lg shadow-xl p-8">
+        
+        
+        <div className="
+          bg-gray-900/60 backdrop-blur-md 
+          border border-white/10 rounded-lg 
+          shadow-lg p-8
+        ">
           {skillCategories.map((category) => (
             <div key={category.name} className="mb-6 last:mb-0">
-              <h3 className="text-xl font-semibold text-gray-700 mb-4">
+              <h3 className="text-xl font-semibold text-gray-200 mb-4">
                 {category.name}
               </h3>
               <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="bg-blue-100 text-blue-800 rounded-full px-4 py-2 text-sm font-medium"
+                   
+                    className="
+                      bg-blue-900/50 text-blue-200 
+                      ring-1 ring-blue-400/50
+                      rounded-full px-4 py-2 text-sm font-medium
+                    "
                   >
                     {skill}
                   </span>
@@ -73,9 +84,9 @@ export default function Certifications() {
         </div>
       </section>
 
-      
+      {/* Certifications Section */}
       <section className="mt-16">
-        <h2 className="text-3xl font-semibold text-white-800 mb-8">
+        <h2 className="text-3xl font-semibold text-white mb-8">
           My Certifications
         </h2>
         <div className="space-y-6">

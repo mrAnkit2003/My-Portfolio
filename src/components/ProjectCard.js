@@ -13,7 +13,7 @@ export default function ProjectCard({ title, description, techStack, liveUrl, gi
     ">
       
       <Image
-        // THE TYPO IS 100% FIXED IN THIS CODEBLOCK
+        
         src={imageUrl}
         alt={`${title} thumbnail`}
         width={600}

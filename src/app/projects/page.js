@@ -1,7 +1,7 @@
 // src/app/projects/page.js
 import ProjectCard from "@/components/ProjectCard";
 
-// Updated data with .png at the end of the placehold.co URL
+
 const projectsData = [
   {
     title: "E-Commerce Store",
@@ -9,7 +9,6 @@ const projectsData = [
     techStack: ["Next.js", "React", "Tailwind CSS", "Stripe", "Neon", "Clerk", "Inngest"],
     liveUrl: "https://go-cart-nine.vercel.app/", 
     githubUrl: "https://github.com/mrAnkit2003/GoCart", 
-    // FIX: Moved .png to the correct spot (after colors)
     imageUrl: "https://placehold.co/600x400/1a0033/ffffff.png?text=E-Commerce+Store"
   },
   {
@@ -18,7 +17,6 @@ const projectsData = [
     techStack: ["Next.js", "React", "Tailwind CSS"],
     liveUrl: "https://my-portfolio-two-psi-90.vercel.app/",
     githubUrl: "https://github.com/mrAnkit2003/My-Portfolio",
-    // FIX: Moved .png to the correct spot (after colors)
     imageUrl: "https://placehold.co/600x400/1a0033/ffffff.png?text=Portfolio+Website"
   },
   {
@@ -27,7 +25,6 @@ const projectsData = [
     techStack: ["React", "WebRTC", "Socket.io", "Mongo Atlas", "Express.js", "Node.js"],
     liveUrl: "https://nexmeetfrontend-suek.onrender.com/",
     githubUrl: "https://github.com/mrAnkit2003/NexMeet",
-    // FIX: Moved .png to the correct spot (after colors)
     imageUrl: "https://placehold.co/600x400/1a0033/ffffff.png?text=Video+Conferencing"
   },
 ];
