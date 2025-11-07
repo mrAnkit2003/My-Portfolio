@@ -14,31 +14,33 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a; /* This will be overridden by the gradient */
+    --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
 
-body {
-  /* This is the magic!
-    We're replacing the simple 'background: var(--background)'
-    with our new purple-to-black gradient.
-  */
-  background-color: #0d001a; /* A fallback color for older browsers */
-  background-image: linear-gradient(
-    180deg,
-    #1a0033 0%, /* Dark Purple at the top */
-    #050505 75%, /* Fading to a dark charcoal */
-    #000000 100% /* Pure black at the bottom */
-  );
-  
-  color: var(--foreground); /* This keeps the text color from your dark mode settings */
-  
-  /* We add this to ensure the gradient always covers the full page, even if content is short */
-  min-height: 100vh;
+
+html {
+  height: 100%;
 }
 
-/* Ensure the HTML element also takes full height */
-html, #__next {
-  height: 100%;
+ body {
+  min-height: 100%;
+  background-color: #0d001a; 
+  background-image: linear-gradient(
+    180deg,
+    #1a0033 0%, 
+    #050505 75%, 
+    #000000 100% 
+  );
+  
+  background-attachment: fixed;
+  color: var(--foreground);
+} 
+
+
+
+
+#__next {
+  min-height: 100%;
 }

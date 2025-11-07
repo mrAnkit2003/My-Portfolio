@@ -27,6 +27,14 @@ const projectsData = [
     githubUrl: "https://github.com/mrAnkit2003/NexMeet",
     imageUrl: "https://placehold.co/600x400/1a0033/ffffff.png?text=Video+Conferencing"
   },
+  {
+    title: "Chat application",
+    description: "A realtime chatting platform enabling real-time, messaging, authenticated user login and realtime updates",
+    techStack: ["React", "Socket.io", "Mongo Atlas", "Express.js", "Node.js"],
+    liveUrl: "https://chatnow-svms.onrender.com",
+    githubUrl: "https://github.com/mrAnkit2003/ChatNow",
+    imageUrl: "https://placehold.co/600x400/1a0033/ffffff.png?text=Chat+Application"
+  },
 ];
 
 export default function Projects() {
