@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Github, ExternalLink } from 'lucide-react';
-import Image from 'next/image'; 
+import Image from 'next/image';
 
 export default function ProjectCard({ title, description, techStack, liveUrl, githubUrl, imageUrl }) {
   return (
@@ -11,20 +11,19 @@ export default function ProjectCard({ title, description, techStack, liveUrl, gi
       transform transition-all duration-300 
       hover:shadow-xl hover:-translate-y-1 hover:border-white/20
     ">
-      
+
       <Image
-        
         src={imageUrl}
         alt={`${title} thumbnail`}
         width={600}
         height={400}
         className="w-full h-48 object-cover"
       />
-      
+
       <div className="p-6">
         <h3 className="text-2xl font-bold text-gray-100 mb-2">{title}</h3>
         <p className="text-gray-300 mb-4 h-24 overflow-hidden">{description}</p>
-        
+
         <div className="mb-6">
           <p className="font-semibold text-gray-200 mb-2">Technologies Used:</p>
           <div className="flex flex-wrap gap-2">
@@ -48,12 +47,8 @@ export default function ProjectCard({ title, description, techStack, liveUrl, gi
             href={liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="
-              inline-flex items-center gap-2 px-4 py-2 
-              text-sm font-medium text-white 
-              bg-blue-600 rounded-lg shadow-md 
-              hover:bg-blue-700 transition-colors
-            "
+            
+            className="btn-primary-sm"
           >
             <ExternalLink className="w-4 h-4" />
             Live Demo

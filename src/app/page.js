@@ -13,23 +13,23 @@ export default function Home() {
           alt="Ankit Das"
           width={250}  
           height={250} 
-          className="rounded-full shadow-2xl border-4 border-white/10" // Added a subtle border
+          className="rounded-full shadow-2xl border-4 border-white/10" 
           priority 
         />
       </div>
 
       <div className="max-w-xl text-center md:text-left">
-        {/* FIXED: text-white-900 is not a class, changed to text-white */}
+        
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight">
           Ankit Das
         </h1>
         
-        {/* FIXED: Changed text-blue-600 to a brighter text-blue-400 */}
+        
         <h2 className="mt-4 text-2xl sm:text-3xl font-medium text-blue-400">
           Full-Stack Web Developer
         </h2>
         
-        {/* FIXED: Changed text-gray-500 to a lighter text-gray-300 */}
+        
         <p className="mt-6 text-lg text-gray-300 max-w-2xl">
           I'm a passionate developer focused on building beautiful, responsive, and
           user-friendly web applications. I love solving problems and turning
@@ -38,7 +38,7 @@ export default function Home() {
         
         <div className="mt-10 flex flex-wrap justify-center md:justify-start gap-4">
           
-          {/* THE BIG FIX: Using the new .btn-primary-lg class */}
+          
           <Link
             href="/projects"
             className="btn-primary-lg"
@@ -46,7 +46,7 @@ export default function Home() {
             View My Projects
           </Link>
           
-          {/* STYLED THIS to match the dark theme */}
+          
           <a
             href="/Ankit_Das_Resume.pdf" 
             target="_blank"
