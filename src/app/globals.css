@@ -42,15 +42,15 @@ html {
   min-height: 100%;
 }
 
-/* --- BUTTON STYLES (FIXED) --- */
+
 @layer components {
   .btn-primary-lg {
-    /* All classes are now on one line */
+   
     @apply inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:from-blue-700 hover:to-purple-700 hover:-translate-y-px;
   }
 
   .btn-primary-sm {
-    /* All classes are now on one line */
+    
     @apply inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg shadow-md transition-all duration-300 ease-in-out hover:shadow-lg hover:from-blue-700 hover:to-purple-700;
   }
 }

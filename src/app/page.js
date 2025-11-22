@@ -48,7 +48,7 @@ export default function Home() {
           
           
           <a
-            href="/Ankit_Das_Resume.pdf" 
+            href="/RESUME_ANKIT_DAS.pdf" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-gray-200 bg-white/5 rounded-lg shadow-lg ring-1 ring-white/10 hover:bg-white/10 transition-colors duration-300"
@@ -57,7 +57,7 @@ export default function Home() {
             My Resume
           </a>
           
-          {/* I've re-enabled your "Get in Touch" button and styled it */}
+          
           {/* <Link
             href="/contact"
             className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-gray-700 bg-white rounded-lg shadow-lg ring-1 ring-gray-300 hover:bg-gray-100 transition-colors duration-300"
