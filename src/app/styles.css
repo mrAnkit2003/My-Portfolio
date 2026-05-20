@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@source "../components";
+@source "../lib";
+@source "../app";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-outfit: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-exo2: var(--font-exo2), sans-serif;
+
+  --color-background: #050816;
+  --color-background-secondary: #0B1120;
+  --color-background-tertiary: #07111F;
+
+  --color-foreground: #F8FAFC;
+  --color-foreground-secondary: #94A3B8;
+  --color-foreground-muted: #64748B;
+
+  --color-accent-indigo: #6366F1;
+  --color-accent-violet: #8B5CF6;
+  --color-accent-cyan: #06B6D4;
+
+  --color-glass-bg: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+}
+
+@layer base {
+  * {
+    @apply border-white/10;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-accent-violet/30 selection:text-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-indigo via-accent-violet to-accent-cyan;
+  }
+  
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_32px_0_rgba(0,0,0,0.3)];
+  }
+
+  .glass-card {
+    @apply bg-[#0B1120]/80 backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:border-white/[0.15] transition-colors duration-300;
+  }
+  
+  .glow-effect {
+    @apply relative;
+  }
+  
+  .glow-effect::before {
+    content: '';
+    @apply absolute inset-0 -z-10 rounded-[inherit] bg-gradient-to-r from-accent-indigo via-accent-violet to-accent-cyan opacity-0 blur-xl transition-opacity duration-500;
+  }
+  
+  .glow-effect:hover::before {
+    @apply opacity-30;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
