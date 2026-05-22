@@ -30,7 +30,7 @@ export const Contact = () => {
           className="max-w-6xl mx-auto glass-card rounded-[3rem] p-8 md:p-16 relative overflow-hidden"
         >
           <div className="absolute inset-0 bg-gradient-to-br from-accent-indigo/10 via-transparent to-accent-cyan/10 pointer-events-none" />
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
             <div className="space-y-8">
               <div>
@@ -54,14 +54,14 @@ export const Contact = () => {
                     <div className="font-medium text-lg">{personalInfo.email}</div>
                   </div>
                 </a>
-                
+
                 <div className="flex items-center gap-4 text-foreground-secondary group">
                   <div className="p-4 rounded-2xl glass group-hover:bg-accent-cyan/20 transition-colors">
                     <MapPin className="w-6 h-6 text-accent-cyan" />
                   </div>
                   <div>
                     <div className="text-sm text-foreground-muted mb-1">Location</div>
-                    <div className="font-medium text-lg">Remote / Global</div>
+                    <div className="font-medium text-lg">Kolkata, India</div>
                   </div>
                 </div>
               </div>
